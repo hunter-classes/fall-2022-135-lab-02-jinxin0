@@ -4,7 +4,7 @@
  * Instructor: Professor Zamansky
  * Assignment: Task C. Using arrays to store, update, and retrieve numbers. Lab 2. Loops, Arrays, and Number Sequences.
  * 
- * 
+ * creates an array of 10 integers, and provides an interface to edit any of its elements.
  */
 
 #include <iostream>
@@ -20,7 +20,7 @@ int main()
     static constexpr std::size_t ARR_SIZE = 10;
     
     int my_data[ARR_SIZE];
-    std::fill(my_data, my_data + ARR_SIZE, 1);
+    std::fill(std::begin(my_data), std::end(my_data), 1);
     
     std::size_t index = 0;
     int val = 1;
